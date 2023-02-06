@@ -15,9 +15,8 @@
  <main>
     <h2> My melody photos ˖⁺‧₊˚♡˚₊‧⁺˖</h2>
     
-    <figure>
+  <figure>
     <img src="mymelody.jpg"/>
- 
     <figcaption>My melody!</figcaption>
 </figure>
     
@@ -42,7 +41,7 @@
          </ol>
   </main>
   
-      <figure>
+  <figure>
     <img src="sanrio.png" />
   </figure>
         
