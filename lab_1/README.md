@@ -1,4 +1,5 @@
 # rebeccaavila.github.io
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -12,11 +13,10 @@
 </header>
   
  <main>
-  
     <h2> My melody photos ˖⁺‧₊˚♡˚₊‧⁺˖</h2>
     
     <figure>
-    <img src="mymelody.jpg"
+    <img src="mymelody.jpg"/>
  
     <figcaption>My melody!</figcaption>
 </figure>
@@ -28,10 +28,10 @@
       <h3>What My melody loves: </h3>
         <u1>
           <li><strong>loves</strong> to bake! </li>
+
             <li> <strong>loves</strong> strawberries! </li>
           <li> <strong>loves</strong> the color <em>pink!</em> </li>
-          <li> <strong>loves</strong> to make cute gifts for her friends! </li>
-         
+          <li> <strong>loves</strong> to make cute gifts for her friends!</li>
         </ul>
         
         <h3> Top 3 characteristics of My melody! </h3>
@@ -40,11 +40,10 @@
             <li> supportive </li>
             <li> <strong>caring!</strong> </li>
          </ol>
-    
   </main>
   
       <figure>
-    <img src="sanrio.png"
+    <img src="sanrio.png" />
   </figure>
         
       <form>    
@@ -85,7 +84,7 @@
     <input type="text" name="name" required placeholder="Enter your name">
     <br>
     <br>
-    <h3> Age:</h3> <input type="number" name="qty" min=""1 max="100">
+    <h3> Age:</h3> <input type="number" name="qty" min=""1 max="100"/>
     <br>
         <h3>Email: </h3>
     <input type="text" name="name" required placeholder="Enter your email">
@@ -111,4 +110,3 @@
   
 </body>
       </html>
-</html>
