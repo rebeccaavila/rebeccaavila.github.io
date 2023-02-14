@@ -3,7 +3,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
-   <title></title>
+   <title> hello kitty form </title>
 
   <style>
     
@@ -17,8 +17,8 @@
         border-radius: 2rem;
         margin: auto;
 
-  }
- body {
+        }
+body {
     background-image: url("https://cdn.pixabay.com/photo/2017/07/08/12/36/background-2484300_1280.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@
 form {
   background: rgb(255,192,203);
   border-radius: 2rem;
-  width: 500px
+  width: 500px;
   margin: auto;
 
 
@@ -45,32 +45,32 @@ img {
     
 </head>
 <body>
+
 <h1 id="title"> Hello Kitty Club Intrest form: </h1>
 
 <P id="description"> Complete the form below if your intrested in the formation of a hello kitty club on campus! </p>
 
 <figure>
-    <img src="https://wallpapers.com/images/featured/7jjpu7c549ruidaf.jpg"/>
- 
+    <img src="https://wallpapers.com/images/featured/7jjpu7c549ruidaf.jpg">
     <figcaption> ૮ • ﻌ - ა </figcaption>
 </figure> 
 <br>
 
 <form id="survey-form">
 
-<label for="name" id="name-label"> Name: </label>
-  <input type="text" id="name"required name="name" required  placeholder="Enter your name">
+<label id="name-label"> Name: </label>
+  <input type="text" id="name" name="name" required placeholder="Enter your name">
   <br>
-<label for="email" id="email-label"> Email: </label>
-   <input type="email" id="email"required name="email" required placeholder="Enter your email"> 
+<label id="email-label"> Email: </label>
+   <input type="email" id="email" name="email" required placeholder="Enter your email"> 
 <br>
-<label for="number" id="number-label"> Age: </label>
-    <input type="number" name ="qty"
-    min="13" max="100"  id="number"required name="name" required placeholder="Age">
+<label id="number-label"> Age: </label>
+    <input type="number" name ="qty" min="13" max="100" id="number" required placeholder="Age">
 <br>
 <br>
 
-<label for="dropdown" id="character"> What is your favorite Sanrio Character? </label>
+What is your favorite Sanrio Character?
+<br>
 <select id="dropdown"> 
 <option value="hello_kitty"> Hello kitty </option> 
 <option value="kuromi"> Kuromi </option>
@@ -80,63 +80,49 @@ img {
 <br>
 <br>
 
-<label for="in_person" id="in_person"> Would you be able to attend in-person meetings? </label>
+Would you be able to attend in-person meetings?
 <br>
-<input id="in_person" type="radio" id="yes" name="option" value="yes">
-<label for="in_person"> Yes!</label>
+<input type="radio" name="option" value="yes"> Yes!
 <br>
-<input id="in_person" type="radio" id="no" name="option" value="no">
-<label for="in_person"> No..</label>
+<input type="radio" id="no" name="option" value="no"> No..
 <br>
-<input id="in_person" type="radio" id="depends" name="option" value="depends">
-<label for="in_person"> Depends on the meeting time</label>
+<input type="radio" id="depends" name="option" value="depends"> Depends on the meeting time
 <br>
 <br>
 
-<label for"choices"> What <em>club times</em> would best work for your schedule? </label>
+ What <em>club times</em> would best work for your schedule?
+ <br>
+<input type="checkbox" name="choices" value="mornings"> Mornings: 9:00 am - 10:00 am
+<br>
+<input type="checkbox" name="choices" value="noon"> Noons: 11:00 am -12:00 pm
+<br>
+<input type="checkbox" name="choices" value="afternoons"> Afternoons: 3:00 pm -4:00 pm
+<br>
+<input type="checkbox" name="choices" value="evenings"> Evenings: 7:00 pm -8:00 pm
+<br>
+<br>
+
+What <em>days</em> would best work for your schedule?
   <br>
-<input id="checkbox" type="checkbox" name="choices" value="mornings">
-<label for="checkbox"> Mornings: 9:00 am - 10:00 am </label>
+<input type="checkbox" name="days" value="mondays"> Mondays
 <br>
-<input id="checkbox" type="checkbox" name="choices" value="noon">
-<label for="checkbox"> Noons: 11:00 am -12:00 pm </label>
+<input type="checkbox" name="days" value="tuesday"> Tuesdays
 <br>
-<input id="checkbox" type="checkbox" name="choices" value="afternoons">
-<label for="checkbox"> Afternoons: 3:00 pm -4:00 pm </label>
+<input type="checkbox" name="days" value="wed"> Wednesdays
 <br>
-<input id="checkbox" type="checkbox" name="choices" value="evenings">
-<label for="checkbox"> Evenings: 7:00 pm -8:00 pm </label>
+<input type="checkbox" name="days" value="th"> Thursdays
 <br>
+<input type="checkbox" name="days" value="fr"> Fridays
 <br>
-
-<label for"days"> What <em>days</em> would best work for your schedule? </label>
-  <br>
-<input id="checkbox" type="checkbox" name="days" value="mondays">
-<label for="checkbox"> Mondays</label>
+<input type="checkbox" name="days" value="st"> Saturdays
 <br>
-<input id="checkbox" type="checkbox" name="days" value="tuesday">
-<label for="checkbox"> Tuesdays </label>
-<br>
-<input id="checkbox" type="checkbox" name="days" value="wed">
-<label for="checkbox"> Wednesdays </label>
-<br>
-<input id="checkbox" type="checkbox" name="days" value="th">
-<label for="checkbox"> Thursdays </label>
-<br>
-<input id="checkbox" type="checkbox" name="days" value="fr">
-<label for="checkbox"> Fridays </label>
-<br>
-<input id="checkbox" type="checkbox" name="days" value="st">
-<label for="checkbox"> Saturdays </label>
-<br>
-<input id="checkbox" type="checkbox" name="days" value="sun">
-<label for="checkbox"> Sundays </label>
+<input type="checkbox" name="days" value="sun"> Sundays
 <br>
 <br>
 
-<label id="textarea"> Any suggestions or comments for the club are much appreciated! </label>
+ Any suggestions or comments for the club are much appreciated!
 <br>
-<textarea id="textarea" name="comments" rows="5" cols="40">
+<textarea name="comments" rows="5" cols="40">
   </textarea>
 <br>
 
