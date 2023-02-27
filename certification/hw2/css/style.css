@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+body{
+  font-family: 'Special Elite', cursive;
+  background-color: white;
+}
+
+#main{
+  background-image: url("https://media.istockphoto.com/photos/brown-recycled-paper-crumpled-texture-background-cream-old-vintage-picture-id1278709873?k=20&m=1278709873&s=612x612&w=0&h=1vFDb3aFhBeBOSHjgGHGDQVHIgnJFPqIjXcwp4AShGw=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin: auto;
+}
+
+figure{
+ padding: 40px;
+  background-color: white;
+  border: 3px dashed black; 
+}
+
+#title{
+  text-align: center;
+  font-size: 50px;
+  padding-top:40px;  
+}
+
+#subtitle{
+  text-align: center;
+}
+
+img-div{
+  background-color:white;
+  padding: 20px;
+
+
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+#image{
+  display: block;
+}
+
+#img-caption{
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+#h2{
+  font-size: 22px;
+  text-align: center;
+  padding: 2px;
+  background-color: white; 
+  border: 3px dashed black; 
+}
+
+#tribute-info{
+  width: 100%;
+  text-align: center;
+  margin:auto;
+}
+
+ul{
+  max-width: 550px;
+  text-align: center;
+  margin: auto;
+  border: 3px dashed black; 
+  background-image: url("https://img.freepik.com/free-photo/crumpled-paper-background_1373-412.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 18px;
+  padding: 20px;
+
+
+}
+
+li{
+  margin: 15px;
+  text-align: justify;
+
+}
+
+#qoute{
+  font-style: italic;
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+  color:black;
+  background-image: url("https://img.freepik.com/free-photo/crumpled-paper-background_1373-412.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid white; 
+  border-radius: 150px;
+  padding: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+
+
+}
+
+#footer{
+  text-align: center;
+}
