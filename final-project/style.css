@@ -1,0 +1,107 @@
+/* variable for csumb web design color pallete */
+
+:root {
+  /* Primary Colors  */
+  --blue:#112E51;
+  --off-white:#F4F2EF;
+
+  /* Secondary Colors  */
+  --button-blue:#0071BC;
+  --sub-header-blue:#205493;
+  --light-blue:#E4F0F7;
+}
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap" rel="stylesheet">
+
+/* CSS for all pages */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+   font-family: 'Libre Franklin', sans-serif;
+}
+
+
+footer {
+  background-color: var(--blue);
+  color: #F4F2EF;
+  padding: 10px;
+  text-align: right;
+  bottom: 0;
+  position: fixed;
+  width: 100%; 
+}
+
+/* CSS for hero Page */
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://cdn.dribbble.com/users/1535237/screenshots/6036923/imac_top-02_4x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-subtitle {
+  font-size: 1 rem;
+  color: #F4F2EF;
+  border: 3px solid #F4F2EF;
+  width: 50%;
+  background-color: rgba(17, 46, 81, 0.6) !important;
+  position: absolute;
+  top: 4rem;
+  left: 6rem;
+  padding: 2rem;
+}
+
+.hero-content {
+  position: relative;
+}
+
+/* CSS for GAME CAREER PAGE */
+
+.Game_Career_Text {
+text-align:  right;
+padding: 50px;
+}
+.Game_Career_Text2 {
+
+padding: 50px;
+}
+
+
+/* MEDIA QUIERES */
+
+/*TABLET DISPLAY*/
+
+@media (max-width:768px) {
+
+  
+}
+
+
+/*PHONE DISPLAY*/
+
+@media (max-width:480px) {
+
+
+}
+
+/*EXTRA LARGE DEVICES*/
