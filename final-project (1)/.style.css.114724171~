@@ -1,0 +1,709 @@
+/* variable for csumb web design color pallete */
+
+:root {
+  /* Primary Colors  */
+  --blue:#112E51;
+  --off-white:#F4F2EF;
+
+  /* Secondary Colors  */
+  --button-blue:#0071BC;
+  --sub-header-blue:#205493;
+  --light-blue:#E4F0F7;
+}
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+
+/* CSS for all pages */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+   font-family: 'Libre Franklin', sans-serif;
+}
+
+/*NAVBAR CSS */
+
+.custom-toggler.navbar-toggler {
+  border-color: white;
+}
+
+span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
+}
+
+.navbar {
+  background-color: #112E51 !important;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+
+.nav-link  {
+  color: #fffffe;
+  font-family: "Hind", sans-serif;
+  font-size: 1.10rem;
+  font-weight: 550; 
+  letter-spacing: .01rem;
+}
+
+a.nav-link {
+   position: relative;
+  text-decoration: none;
+}
+
+a.nav-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #fffffe;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a.nav-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+.container-fluid  {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: right;
+    justify-content: flex-end;
+}
+
+
+  footer {
+    background-color: #112E51;
+    color: #FFF !important;
+    padding: 48px 32px;
+    margin: 0;
+    border: 0;
+}
+
+footer a{
+  color:#FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  float: left;
+
+}
+footer a:hover{
+  color:#cccccc;
+}
+
+.containter {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.footer-column{
+  flex-basis: 200px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+span.footer-link {
+  flex-basis: 200px;
+  flex-grow: 1;
+  text-align: center;
+  display: block;
+  width:max-content;
+  padding: 5px 10px;
+  margin: 0 auto;
+   font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  
+}
+
+.footer-heading{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    line-height: 1.25;
+    font-size: 1.31951rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    float: left;
+}
+
+.footer-heading2{
+    display: block;
+    letter-spacing: .05rem;
+    line-height: 1.25;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.footer-link{
+  display: block;
+  width:max-content;
+  padding: 5px 10px;
+  margin: 0 auto;
+  
+}
+
+.footer-bottom {
+  display: flex;
+}
+ .copyright {
+  margin-right: auto;
+}
+
+.footer-social{
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+    
+
+/* CSS for hero Page */
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background: url("https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6102c0d95c9727a02a32c1b3_17-best-graphic-design-software-tools_BlogHero_V2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#hero-box {
+  font-size: 1 rem;
+  color: #fffffe;
+  width: 35%;
+  background-color:  rgba(17, 46, 81, 0.9) !important;
+  position: absolute;
+  top: 7rem;
+  left: 6rem;
+  padding: 2rem;
+  display: inline-block;
+}
+
+.hero-content {
+  position: relative;
+}
+
+.hero-title {
+    font-size: 32px;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+   padding-top: 20px;
+    letter-spacing: .05rem;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+   color: #F4F2EF;
+  font-size: 1.3rem;
+  margin: 0px 0px 24px;
+  font-weight: 100;
+  padding: .5rem;
+  font-family: "Hind", sans-serif;
+}
+
+#hero-button {
+  background-color: #0071BC;
+  color: #FFF !important;
+  font-family: 'Libre Franklin', sans-serif;
+  padding: 8px 24px;
+  float: right;
+  font-size: 1.10rem;
+  font-weight: 550; 
+  letter-spacing: .01rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+#index-footer {
+  background-color: var(--blue);
+  color: #F4F2EF;
+  padding: 10px;
+  text-align: right;
+  bottom: 0;
+  position: fixed;
+  width: 100%; 
+  line-height: 1.25;
+  font-size: 1.10rem;
+  font-weight: 550; 
+  letter-spacing: .01rem;
+}
+
+/* CSS for GAME CAREER PAGE */
+
+.Game_Career_Text {
+text-align: center;
+padding: 50px;
+}
+
+.game-career-links {
+  style="list-style: none;"
+}
+
+/* CSS for WEB CAREER PAGE */
+
+#web-career-body {
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.webrow {
+  display: flex;
+}
+
+.webrow ul li {
+  padding: 10px 10px;
+  text-align: center;
+  margin: 15px;
+}
+
+.webrow ul li:hover {
+  background-color: var(--light-blue);
+}
+
+.web-career-links {
+  text-decoration: none;
+  color: black;
+}
+
+.web-career-paths {
+  margin-left: 0;
+  width: 30%;
+}
+
+.web-career-paths ul li {
+  list-style: none;
+}
+
+.web-description {
+  margin: 25px 20px;
+}
+
+.web-career-description {
+  margin: 0 30px;
+}
+
+.web-career-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* END OF WEB CAREER PAGE */
+
+
+/* CSS FOR VISUAL CAREER PAGE*/
+
+  .visual-career-main {
+  
+    padding: 50px;
+    background-color: #E4F0F7;
+  }
+.visual-design-image {
+    width: 100%;
+  object-fit: contain;
+   max-width: 100%;
+  height: auto;
+  border: 10px solid #112E51;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+  
+ .visual-career-main h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 48px;
+    color: #112E51;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+   padding-top: 50px;
+    display: inline-block;
+   
+  }
+  
+ .visual-career-main h2 {
+    color: #F4F2EF;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+   font-weight: bold;
+    padding: 20px;
+  }
+  
+ .visual-career h3 {
+    color: #F4F2EF;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+   font-weight: bold;
+    padding: 20px;
+  }
+
+.visual-career h4 {
+  font-size: 21px;
+    font-weight: bold;
+}
+  
+  .visual-career-paths ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    
+  }
+.visual-career-list {
+  background-color: #0071BC;
+}
+  
+  .visual-career-paths li {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #112E51;
+    color: #FFF !important;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 550; 
+    letter-spacing: .01rem;
+    text-decoration: none;
+  }
+ 
+
+  .visual-description {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #112E51;
+    color: #F4F2EF;
+  }
+  
+  .visual-description p {
+    margin-bottom: 10px;
+  }
+  
+  
+  .visual-description strong {
+    font-weight: bold;
+  }
+  .visual-career-links {
+    color: #F4F2EF;
+    padding: 20px;
+  }
+
+
+/* END OF CSS FOR VISUAL CAREER PAGE*/
+
+/* CSS FOR FEEDBACK PAGE */
+
+#form {
+  background-color: var(--light-blue);
+  padding: 15px 50px;
+  border: 5px solid var(--blue);
+  border-radius: 20px;
+  
+}
+
+#feedback-main {
+  margin: 90px 50px;
+}
+
+#evaluation-title {
+  color: var(--blue);
+  font-weight: 600;
+  
+}
+
+#question {
+  color: var(--blue);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#feedback-button:hover {
+  background-color: var(--button-blue) !important;
+}
+
+/*.bi {
+  position: absolute;
+  bottom: 5%;
+  left: 48%;
+  color: var(--button-blue);
+  font-size: 5rem;
+  text-align: center;
+  index: -100;
+}*/
+
+/*END OF CSS FOR FEEDBACK PAGE */
+
+/* ABOUT US PAGE CSS */
+
+#about-section1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+#about-section2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+background: #314755;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#about-section3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#about-section4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#about-section5 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+background: #314755;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#about-section6 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.about-section h1{
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.about-section p{
+  color: white;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+#about-main * {
+  box-sizing:border-box;
+  transition:all 0.3s;
+  -webkit-transition:all 0.3s;
+}
+
+.pos {
+  position:relative;
+  margin:0 auto;
+}
+
+.down-arrow {
+  height:60px;
+  width:60px;
+  border:4px solid #FFF;
+  border-radius:100%;
+}
+
+.down-arrow:before,.down-arrow:after {
+content:'';
+position:absolute;
+top:26px;
+width:18px;
+border:2px solid #FFF;
+transition:all 0.3s;
+-webkit-transition:all 0.3s;
+}
+
+.down-arrow:before {
+  transform:rotateZ(45deg);
+  -webkit-transform:rotateZ(45deg);
+  left:9px;
+}
+
+.down-arrow:after {
+  transform:rotateZ(-45deg);
+  -webkit-transform:rotateZ(-45deg);
+  left:22px;
+}
+
+.down-arrow:hover {
+  cursor:pointer;
+  border-width:0;
+}
+.down-arrow:hover:before,.down-arrow:hover:after {
+  top:40px;
+}
+.down-arrow:hover:before {
+  left:13px;
+}
+.down-arrow:hover:after {
+  left:26px;
+}
+
+
+.website-pages {
+  margin: 0;
+  padding: 8rem 2rem;
+  text-align: center;
+  background: #314755;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+}
+
+#website-h2 {
+  font-size: 3.2rem;
+  color: #FFFFFF;
+  display: block;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    line-height: 1.25;
+    font-size: 1.31951rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    float: left;
+}
+
+.website-links{
+  text-decoration:none;
+}
+
+.website-img{
+  height: calc(100% - 4.8rem);
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.website-tile{
+  color: #F4F2EF;
+  width: 100%;
+  background-color: #112E51;;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-style: bolder;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 550; 
+  letter-spacing: .01rem;
+}
+
+
+
+.website-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4em;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+/*end of about us page css  */
+
+
+/* MEDIA QUIERES */
+
+/*TABLET DISPLAY*/
+
+@media (max-width:768px) {
+
+  /* MAIN FOOTER CSS */
+  .footer-main{
+  flex-direction: column;
+}
+  
+}
+
+
+/*PHONE DISPLAY*/
+
+@media (max-width:480px) {
+
+
+}
+
+/*EXTRA LARGE DEVICES*/
